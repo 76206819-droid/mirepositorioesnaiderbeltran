@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio Web</title>
-    <!--para los iconos de redes sociales-->
+    <title>Portafolio | Esnaider Beltran</title>
+    <!-- Iconos de FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,87 +16,79 @@
       <div class="contenedor">
         <div class="perfil">
           <div class="contenedorFoto">
-            <img src="./imagenes/foto3.jpg" alt="Sandra Chávez" class="foto" />
+            <span>EB</span>
           </div>
           <div class="infor">
-            <h1>Sandra Chávez</h1>
+            <h1>Esnaider Beltran</h1>
             <p>Desarrollador Web</p>
           </div>
         </div>
       </div>
     </header>
+
     <section id="sobre-mi">
       <div class="contenedor">
         <h2>Sobre Mí</h2>
         <p>
-          Hola, soy un desarrollador web con 5 años de experiencia creando
-          sitios y aplicaciones funcionales. Me especializo en HTML, CSS y
-          JavaScript. Disfruto aprendiendo nuevas tecnologías y enfrentando
-          desafíos creativos.
+          Hola, soy Esnaider Beltran, desarrollador web enfocado en la creación de sitios y aplicaciones funcionales. Me especializo en tecnologías fundamentales como HTML, CSS y JavaScript, buscando siempre aprender nuevas herramientas y resolver desafíos tecnológicos.
         </p>
         <p>
-          Cuando no estoy programando, me gusta leer, viajar y explorar nuevas
-          tendencias en tecnología. Mi objetivo es crear soluciones digitales
-          que tengan un impacto positivo en la vida de las personas.
+          Mi objetivo principal es desarrollar soluciones digitales eficientes, adaptables y con una excelente experiencia de usuario.
         </p>
       </div>
     </section>
+
     <section id="proyectos">
       <div class="contenedor">
         <h2>Mis Proyectos</h2>
         <div class="proyectos-container">
           <div class="proyecto">
             <h3>TempTracker</h3>
-            <p>Web para ver el tiempo en linea de cada ciudad</p>
+            <p>Aplicación web para la consulta del tiempo meteorológico en tiempo real para distintas ciudades.</p>
           </div>
           <div class="proyecto">
-            <h3>Ejemplo 2</h3>
-            <p>
-              Aplicación web para gestión de tareas con funcionalidades de
-              arrastrar y soltar, categorías y recordatorios.
-            </p>
+            <h3>Gestor de Tareas</h3>
+            <p>Plataforma para la organización de proyectos interactiva con tableros interactivos y listas dinámicas.</p>
           </div>
           <div class="proyecto">
-            <h3>Ejemplo 3</h3>
-            <p>
-              Sistema de visualización de datos con gráficos interactivos,
-              reportes personalizados y actualización en tiempo real.
-            </p>
+            <h3>Visualizador de Datos</h3>
+            <p>Sistema de reportes estadísticos con gráficos en tiempo real e interfaz responsiva.</p>
           </div>
         </div>
       </div>
     </section>
+
     <section id="habilidades">
       <div class="contenedor">
         <h2>Habilidades</h2>
         <div class="habilidades-lista">
-          <div class="habilidad">MIT App Inventor</div>
-          <div class="habilidad">HTML</div>
-          <div class="habilidad">CSS</div>
-          <div class="habilidad">JavaScript</div>
-          <div class="habilidad">GitHub</div>
+          <div class="habilidad"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="habilidad"><i class="fab fa-css3-alt"></i> CSS3</div>
+          <div class="habilidad"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="habilidad"><i class="fab fa-github"></i> GitHub</div>
+          <div class="habilidad"><i class="fas fa-mobile-alt"></i> App Inventor</div>
         </div>
       </div>
     </section>
+
     <section id="contacto">
       <div class="contenedor">
         <h2>Contacto</h2>
-        <form>
+        <form onsubmit="event.preventDefault(); pop_up('¡Mensaje enviado correctamente!');">
           <div class="form-group">
-            <input type="text" placeholder="Nombre" required />
+            <input type="text" placeholder="Tu Nombre" required />
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Email" required />
+            <input type="email" placeholder="Tu Correo Electrónico" required />
           </div>
           <div class="form-group">
-            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
           </div>
-          <button onclick="pop_up('Mensaje enviado correctamante')">
-            Enviar Mensaje
-          </button>
+          <button type="submit">Enviar Mensaje</button>
         </form>
       </div>
     </section>
+
     <footer>
       <div class="contenedor">
         <div class="enlaces">
@@ -104,14 +96,11 @@
           <a href="#"><i class="fab fa-linkedin"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
-        <p>
-          &copy; 2026 Desarrollado por Sandra Chávez - Todos los derechos
-          reservados
-        </p>
+        <p>&copy; 2026 Desarrollado por Esnaider Beltran - Todos los derechos reservados</p>
       </div>
     </footer>
+
     <script src="./codigo.js"></script>
   </body>
 </html>
